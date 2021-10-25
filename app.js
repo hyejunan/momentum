@@ -12,11 +12,6 @@ function onLoginSubmit(event) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleLinkClick(event) {
-    event.preventDefault();
-    alert("clicked!");
-}
-
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick);
 
