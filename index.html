@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/994a241fd7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Momentum App</title>
+    <title>Momentum</title>
 </head>
 <body>
     <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <button>Log In</button>
+        <h1>Welcome! What is your name?</h1>
+        <input required maxlength="15" type="text" autofocus/>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <script src="app.js"></script>
+    <div class="center">
+        <h1 id="greeting" class="hidden"></h1>
+        <div id="todo-part" class="hidden">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="  Write New to-do" />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <div id="weather" class="hidden">
+        <h4>
+            <span class="city"></span>
+            <span class="temp"></span>
+            <span class="weather"></span>
+        </h4>
+    </div>
+    <div id="clock-part" class="hidden">
+        <h2 id="clock"></h2>
+    </div>
+    <script src="./js/background.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/todo.js"></script>
+    
 </body>
 </html>
